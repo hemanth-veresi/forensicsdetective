@@ -1,0 +1,16 @@
+python-docx
+pymupdf
+pillow
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+reportlab
+python-barcode
+opencv-python-headless
+tqdm
+joblib
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

@@ -1,16 +1,6 @@
 # SETUP
-
-Environment (Colab recommended):
-1. Open a new Colab notebook.
-2. Mount Google Drive if you want persistent storage:
-   from google.colab import drive
-   drive.mount('/content/drive')
-
-3. Install dependencies (run in Colab cell):
-!pip install -r requirements.txt
-
-4. Example workflow:
- - Run src/data_generation.py to create  test dataset (set n=7000)
- - Run src/image_conversion.py to create images
- - Run src/classification.py to train classifiers
- - Run src/analysis.py to produce metrics and confusion matrices
+# create virtualenv
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+# install libreoffice (for PDF conversions)
+sudo apt-get update && sudo apt-get install -y libreoffice libreoffice-writer poppler-utils
